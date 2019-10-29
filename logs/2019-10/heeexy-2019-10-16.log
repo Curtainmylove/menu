@@ -1,0 +1,1285 @@
+2019-10-16 09:36:28.046 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 14724 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 09:36:28.056 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 09:36:29.609 ERROR --- [HikariConfig.java:493][restartedMain] - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@b4aac2
+2019-10-16 09:36:29.613 WARN  --- [AbstractApplicationContext.java:554][restartedMain] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-16 09:36:29.623 ERROR --- [LoggingFailureAnalysisReporter.java:42][restartedMain] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-10-16 09:37:20.205 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 12268 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 09:37:20.210 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 09:37:21.336 ERROR --- [HikariConfig.java:493][restartedMain] - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@b4aac2
+2019-10-16 09:37:21.339 WARN  --- [AbstractApplicationContext.java:554][restartedMain] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-16 09:37:21.349 ERROR --- [LoggingFailureAnalysisReporter.java:42][restartedMain] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-10-16 09:40:29.564 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 15072 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 09:40:29.570 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 09:40:30.736 ERROR --- [HikariConfig.java:493][restartedMain] - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@b4aac2
+2019-10-16 09:40:30.740 WARN  --- [AbstractApplicationContext.java:554][restartedMain] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-16 09:40:30.754 ERROR --- [LoggingFailureAnalysisReporter.java:42][restartedMain] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driverclassname
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+2019-10-16 09:43:16.221 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 16576 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 09:43:16.232 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 09:43:17.656 WARN  --- [AbstractApplicationContext.java:554][restartedMain] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2019-10-16 09:43:17.673 ERROR --- [SpringApplication.java:858][restartedMain] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:228)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at com.heeexy.example.MyApplication.main(MyApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:974)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:848)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:565)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:477)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:227)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1403)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [com/heeexy/example/config/shiro/ShiroConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.mgt.SecurityManager]: Factory method 'securityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 50 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRealm': Unsatisfied dependency expressed through field 'loginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.heeexy.example.config.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$c1e2b12a.userRealm(<generated>)
+	at com.heeexy.example.config.shiro.ShiroConfiguration.securityManager(ShiroConfiguration.java:60)
+	at com.heeexy.example.config.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$c1e2b12a.CGLIB$securityManager$0(<generated>)
+	at com.heeexy.example.config.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$c1e2b12a$$FastClassBySpringCGLIB$$417f34cb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.heeexy.example.config.shiro.ShiroConfiguration$$EnhancerBySpringCGLIB$$c1e2b12a.securityManager(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 51 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginServiceImpl': Unsatisfied dependency expressed through field 'loginDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginDao' defined in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\com\heeexy\example\dao\LoginDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1467)
+	... 98 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 111 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 125 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:224)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:176)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 126 common frames omitted
+2019-10-16 09:50:46.828 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 13380 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 09:50:46.830 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 09:50:49.853 ERROR --- [DirectJDKLog.java:175][restartedMain] - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at com.heeexy.example.MyApplication.main(MyApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1108)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:550)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:957)
+	... 17 common frames omitted
+2019-10-16 09:50:49.877 ERROR --- [LoggingFailureAnalysisReporter.java:42][restartedMain] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-10-16 10:07:22.658 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 13680 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 10:07:22.662 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 10:07:26.237 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 4.443 seconds (JVM running for 6.388)
+2019-10-16 10:08:26.736 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 8820 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 10:08:26.746 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 10:08:29.849 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 3.54 seconds (JVM running for 4.804)
+2019-10-16 13:55:46.756 INFO  --- [HikariDataSource.java:110][http-nio-8088-exec-4] - HikariPool-1 - Starting...
+2019-10-16 13:55:47.659 INFO  --- [HikariDataSource.java:123][http-nio-8088-exec-4] - HikariPool-1 - Start completed.
+2019-10-16 13:55:47.669 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT u.id userId, u.username username, u.password password, u.nickname nickName FROM sys_user u WHERE u.username = ? AND u.password = ? AND u.delete_status = '1' 
+2019-10-16 13:55:47.702 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: admin(String), 123456(String)
+2019-10-16 13:55:47.776 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 1
+2019-10-16 13:55:47.981 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 13:55:47.981 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: admin(String)
+2019-10-16 13:55:48.029 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 1
+2019-10-16 13:55:48.058 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 13:55:48.058 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 13:55:48.105 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 13:55:48.108 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 13:55:48.108 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 13:55:48.154 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 13:55:56.469 INFO  --- [UserRealm.java:36][http-nio-8088-exec-6] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 13:55:56.470 INFO  --- [UserRealm.java:37][http-nio-8088-exec-6] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 13:55:56.528 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-10-16 13:55:56.529 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 
+2019-10-16 13:55:56.575 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 1
+2019-10-16 13:55:56.576 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-10-16 13:55:56.576 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 0(Integer), 50(Integer)
+2019-10-16 13:55:56.622 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 5
+2019-10-16 13:55:59.346 INFO  --- [UserRealm.java:36][http-nio-8088-exec-7] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 13:55:59.346 INFO  --- [UserRealm.java:37][http-nio-8088-exec-7] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 13:55:59.414 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-10-16 13:55:59.415 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==> Parameters: 
+2019-10-16 13:55:59.461 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - <==      Total: 1
+2019-10-16 13:55:59.462 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-10-16 13:55:59.463 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==> Parameters: 0(Integer), 50(Integer)
+2019-10-16 13:55:59.514 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - <==      Total: 19
+2019-10-16 13:55:59.648 INFO  --- [UserRealm.java:36][http-nio-8088-exec-8] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 13:55:59.648 INFO  --- [UserRealm.java:37][http-nio-8088-exec-8] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 13:55:59.649 INFO  --- [UserRealm.java:36][http-nio-8088-exec-8] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 13:55:59.649 INFO  --- [UserRealm.java:37][http-nio-8088-exec-8] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 13:55:59.650 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-10-16 13:55:59.650 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==> Parameters: 
+2019-10-16 13:55:59.697 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - <==      Total: 3
+2019-10-16 20:33:18.002 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1870dc1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:23.033 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34951b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:28.037 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18f2c51 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:33.041 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2e6104 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:38.044 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a89a12 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:38.065 WARN  --- [PoolBase.java:176][http-nio-8088-exec-10] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14428b9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:43.047 WARN  --- [PoolBase.java:176][http-nio-8088-exec-9] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9e193f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:43.067 WARN  --- [PoolBase.java:176][http-nio-8088-exec-10] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17ba689 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:43.123 WARN  --- [AbstractAuthenticator.java:216][http-nio-8088-exec-9] - Authentication failed for token submission [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\LoginMapper.xml]
+### The error may involve com.heeexy.example.dao.LoginDao.getUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy53.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy54.getUser(Unknown Source)
+	at com.heeexy.example.service.impl.LoginServiceImpl.getUser(LoginServiceImpl.java:54)
+	at com.heeexy.example.config.shiro.UserRealm.doGetAuthenticationInfo(UserRealm.java:53)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.heeexy.example.service.impl.LoginServiceImpl.authLogin(LoginServiceImpl.java:41)
+	at com.heeexy.example.controller.LoginController.authLogin(LoginController.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\LoginMapper.xml]
+### The error may involve com.heeexy.example.dao.LoginDao.getUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 84 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 91 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30157ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:676)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:190)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:155)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 101 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2798)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:550)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:165)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	... 106 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1271)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:555)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2794)
+	... 109 common frames omitted
+2019-10-16 20:33:48.072 WARN  --- [PoolBase.java:176][http-nio-8088-exec-10] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@792282 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:52.024 INFO  --- [HikariDataSource.java:350][Thread-11] - HikariPool-1 - Shutdown initiated...
+2019-10-16 20:33:52.039 WARN  --- [PoolBase.java:176][http-nio-8088-exec-10] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12532c2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 20:33:52.040 INFO  --- [HikariDataSource.java:352][Thread-11] - HikariPool-1 - Shutdown completed.
+2019-10-16 20:33:54.439 WARN  --- [AbstractAuthenticator.java:216][http-nio-8088-exec-10] - Authentication failed for token submission [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\LoginMapper.xml]
+### The error may involve com.heeexy.example.dao.LoginDao.getUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy53.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy54.getUser(Unknown Source)
+	at com.heeexy.example.service.impl.LoginServiceImpl.getUser(LoginServiceImpl.java:54)
+	at com.heeexy.example.config.shiro.UserRealm.doGetAuthenticationInfo(UserRealm.java:53)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at com.heeexy.example.service.impl.LoginServiceImpl.authLogin(LoginServiceImpl.java:41)
+	at com.heeexy.example.controller.LoginController.authLogin(LoginController.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\LoginMapper.xml]
+### The error may involve com.heeexy.example.dao.LoginDao.getUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 84 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 91 common frames omitted
+Caused by: java.sql.SQLException: HikariPool-1 - Interrupted during connection acquisition
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:155)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 101 common frames omitted
+Caused by: java.lang.InterruptedException: null
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:944)
+	at com.zaxxer.hikari.util.ConcurrentBag.borrow(ConcurrentBag.java:157)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:173)
+	... 106 common frames omitted
+2019-10-16 20:33:54.469 ERROR --- [GlobalExceptionHandler.java:43][http-nio-8088-exec-10] - 异常
+java.lang.NullPointerException: null
+	at org.springframework.web.util.UrlPathHelper.removeJsessionid(UrlPathHelper.java:517)
+	at org.springframework.web.util.UrlPathHelper.removeSemicolonContent(UrlPathHelper.java:502)
+	at org.springframework.web.util.UrlPathHelper.decodeAndCleanUriString(UrlPathHelper.java:435)
+	at org.springframework.web.util.UrlPathHelper.getOriginatingRequestUri(UrlPathHelper.java:382)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.addContentDispositionHeader(AbstractMessageConverterMethodProcessor.java:427)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-16 20:33:54.472 WARN  --- [ExceptionHandlerExceptionResolver.java:419][http-nio-8088-exec-10] - Failure in @ExceptionHandler public com.alibaba.fastjson.JSONObject com.heeexy.example.config.exception.GlobalExceptionHandler.defaultErrorHandler(javax.servlet.http.HttpServletRequest,java.lang.Exception)
+java.lang.NullPointerException: null
+	at org.springframework.web.util.UrlPathHelper.removeJsessionid(UrlPathHelper.java:517)
+	at org.springframework.web.util.UrlPathHelper.removeSemicolonContent(UrlPathHelper.java:502)
+	at org.springframework.web.util.UrlPathHelper.decodeAndCleanUriString(UrlPathHelper.java:435)
+	at org.springframework.web.util.UrlPathHelper.getOriginatingRequestUri(UrlPathHelper.java:382)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.addContentDispositionHeader(AbstractMessageConverterMethodProcessor.java:427)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:287)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:180)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:412)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1297)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1109)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-10-16 20:34:00.752 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 16620 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 20:34:00.755 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 20:34:05.029 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 5.276 seconds (JVM running for 7.447)
+2019-10-16 20:34:05.846 INFO  --- [HikariDataSource.java:110][http-nio-8088-exec-4] - HikariPool-1 - Starting...
+2019-10-16 20:34:06.470 INFO  --- [HikariDataSource.java:123][http-nio-8088-exec-4] - HikariPool-1 - Start completed.
+2019-10-16 20:34:06.478 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT u.id userId, u.username username, u.password password, u.nickname nickName FROM sys_user u WHERE u.username = ? AND u.password = ? AND u.delete_status = '1' 
+2019-10-16 20:34:06.507 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: admin(String), 123456(String)
+2019-10-16 20:34:06.587 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 1
+2019-10-16 20:34:06.699 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 20:34:06.702 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: admin(String)
+2019-10-16 20:34:06.746 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 1
+2019-10-16 20:34:06.778 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:34:06.779 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 20:34:06.822 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 20:34:06.823 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:34:06.824 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 20:34:06.866 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 20:34:11.290 INFO  --- [UserRealm.java:36][http-nio-8088-exec-3] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 20:34:11.290 INFO  --- [UserRealm.java:37][http-nio-8088-exec-3] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 20:34:11.343 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-10-16 20:34:11.343 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==> Parameters: 
+2019-10-16 20:34:11.386 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - <==      Total: 1
+2019-10-16 20:34:11.387 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-10-16 20:34:11.388 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==> Parameters: 0(Integer), 50(Integer)
+2019-10-16 20:34:11.431 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - <==      Total: 5
+2019-10-16 20:37:24.986 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 20:37:24.987 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: admin(String)
+2019-10-16 20:37:25.038 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 1
+2019-10-16 20:37:25.039 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:37:25.039 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 20:37:25.083 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 20:37:25.083 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:37:25.084 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 20:37:25.127 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 20:37:51.112 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 20:37:51.113 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: admin(String)
+2019-10-16 20:37:51.156 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 1
+2019-10-16 20:37:51.157 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:37:51.158 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 20:37:51.200 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 20:37:51.201 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:37:51.201 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 20:37:51.244 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 20:38:24.880 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 20:38:24.881 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==> Parameters: admin(String)
+2019-10-16 20:38:24.925 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - <==      Total: 1
+2019-10-16 20:38:24.926 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:38:24.926 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==> Parameters: 
+2019-10-16 20:38:24.968 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - <==      Total: 10
+2019-10-16 20:38:24.969 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:38:24.970 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - ==> Parameters: 
+2019-10-16 20:38:25.012 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-7] - <==      Total: 10
+2019-10-16 20:38:31.477 INFO  --- [UserRealm.java:36][http-nio-8088-exec-6] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 20:38:31.478 INFO  --- [UserRealm.java:37][http-nio-8088-exec-6] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 20:38:31.528 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-10-16 20:38:31.529 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 
+2019-10-16 20:38:31.572 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 1
+2019-10-16 20:38:31.574 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-10-16 20:38:31.574 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 0(Integer), 50(Integer)
+2019-10-16 20:38:31.621 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 19
+2019-10-16 20:38:31.675 INFO  --- [UserRealm.java:36][http-nio-8088-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 20:38:31.675 INFO  --- [UserRealm.java:37][http-nio-8088-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 20:38:31.676 INFO  --- [UserRealm.java:36][http-nio-8088-exec-10] - permission的值为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-10-16 20:38:31.676 INFO  --- [UserRealm.java:37][http-nio-8088-exec-10] - 本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-10-16 20:38:31.677 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-10] - ==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-10-16 20:38:31.677 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-10] - ==> Parameters: 
+2019-10-16 20:38:31.721 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-10] - <==      Total: 3
+2019-10-16 20:40:54.915 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 20:40:54.915 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==> Parameters: admin(String)
+2019-10-16 20:40:54.963 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - <==      Total: 1
+2019-10-16 20:40:54.963 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:40:54.964 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==> Parameters: 
+2019-10-16 20:40:55.011 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - <==      Total: 10
+2019-10-16 20:40:55.012 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 20:40:55.013 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - ==> Parameters: 
+2019-10-16 20:40:55.060 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-9] - <==      Total: 10
+2019-10-16 21:08:04.900 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@25d13e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:09.905 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@568d79 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:14.908 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@88dd3c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:19.911 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37617b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:24.912 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@74f845 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:29.914 WARN  --- [PoolBase.java:176][http-nio-8088-exec-8] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b7d473 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:29.955 ERROR --- [GlobalExceptionHandler.java:43][http-nio-8088-exec-8] - 异常
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy53.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy55.getUserPermission(Unknown Source)
+	at com.heeexy.example.service.impl.PermissionServiceImpl.getUserPermissionFromDB(PermissionServiceImpl.java:34)
+	at com.heeexy.example.service.impl.PermissionServiceImpl.getUserPermission(PermissionServiceImpl.java:26)
+	at com.heeexy.example.service.impl.LoginServiceImpl.getInfo(LoginServiceImpl.java:67)
+	at com.heeexy.example.controller.LoginController.getInfo(LoginController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 77 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 84 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:676)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:190)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:155)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 94 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2798)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:550)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:165)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	... 99 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1271)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:555)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2794)
+	... 102 common frames omitted
+2019-10-16 21:08:29.958 WARN  --- [AbstractHandlerExceptionResolver.java:194][http-nio-8088-exec-8] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30087ms.]
+2019-10-16 21:08:37.996 WARN  --- [PoolBase.java:176][http-nio-8088-exec-4] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f68266 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:43.000 WARN  --- [PoolBase.java:176][http-nio-8088-exec-4] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@fc109c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:48.001 WARN  --- [PoolBase.java:176][http-nio-8088-exec-4] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1412824 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:53.004 WARN  --- [PoolBase.java:176][http-nio-8088-exec-4] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1e7f569 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:08:53.047 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:08:53.048 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: admin(String)
+2019-10-16 21:08:53.091 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 1
+2019-10-16 21:08:53.092 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:08:53.092 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: 
+2019-10-16 21:08:53.135 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 10
+2019-10-16 21:08:53.136 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:08:53.137 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: 
+2019-10-16 21:08:53.179 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 10
+2019-10-16 21:10:21.794 INFO  --- [HikariDataSource.java:350][Thread-11] - HikariPool-1 - Shutdown initiated...
+2019-10-16 21:10:21.803 INFO  --- [HikariDataSource.java:352][Thread-11] - HikariPool-1 - Shutdown completed.
+2019-10-16 21:10:27.553 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 16188 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 21:10:27.557 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 21:10:31.787 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 5.077 seconds (JVM running for 7.394)
+2019-10-16 21:10:35.879 INFO  --- [HikariDataSource.java:110][http-nio-8088-exec-1] - HikariPool-1 - Starting...
+2019-10-16 21:10:36.477 INFO  --- [HikariDataSource.java:123][http-nio-8088-exec-1] - HikariPool-1 - Start completed.
+2019-10-16 21:10:36.507 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:10:36.532 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: admin(String)
+2019-10-16 21:10:36.598 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 1
+2019-10-16 21:10:36.601 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:10:36.602 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 21:10:36.643 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 21:10:36.645 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:10:36.645 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 21:10:36.687 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 21:11:05.143 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:11:05.144 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: admin(String)
+2019-10-16 21:11:05.188 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 1
+2019-10-16 21:11:05.189 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:11:05.189 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 21:11:05.231 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 21:11:05.232 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:11:05.233 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 21:11:05.274 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 21:19:24.603 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@103dab2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:29.606 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@aff2be (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:34.608 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@aa138f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:39.609 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12527f6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:44.611 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c0aae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:49.612 WARN  --- [PoolBase.java:176][http-nio-8088-exec-3] - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40607 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2019-10-16 21:19:49.641 ERROR --- [GlobalExceptionHandler.java:43][http-nio-8088-exec-3] - 异常
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy53.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:83)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy55.getUserPermission(Unknown Source)
+	at com.heeexy.example.service.impl.PermissionServiceImpl.getUserPermissionFromDB(PermissionServiceImpl.java:34)
+	at com.heeexy.example.service.impl.PermissionServiceImpl.getUserPermission(PermissionServiceImpl.java:26)
+	at com.heeexy.example.service.impl.LoginServiceImpl.getInfo(LoginServiceImpl.java:67)
+	at com.heeexy.example.controller.LoginController.getInfo(LoginController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 77 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 84 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:676)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:190)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:155)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 94 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2798)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:550)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:165)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	... 99 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:103)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:149)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1271)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:555)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2794)
+	... 102 common frames omitted
+2019-10-16 21:19:49.643 WARN  --- [AbstractHandlerExceptionResolver.java:194][http-nio-8088-exec-3] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.
+### The error may exist in file [F:\SpringBoot-Shiro-Vue-master\back\target\classes\mapper\PermissionMapper.xml]
+### The error may involve com.heeexy.example.dao.PermissionDao.getUserPermission
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30078ms.]
+2019-10-16 21:21:29.994 INFO  --- [HikariDataSource.java:350][Thread-11] - HikariPool-1 - Shutdown initiated...
+2019-10-16 21:21:30.003 INFO  --- [HikariDataSource.java:352][Thread-11] - HikariPool-1 - Shutdown completed.
+2019-10-16 21:21:34.898 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on admin-PC with PID 20124 (F:\SpringBoot-Shiro-Vue-master\back\target\classes started by admin in F:\SpringBoot-Shiro-Vue-master\back)
+2019-10-16 21:21:34.922 INFO  --- [SpringApplication.java:675][restartedMain] - No active profile set, falling back to default profiles: default
+2019-10-16 21:21:38.995 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 4.849 seconds (JVM running for 6.709)
+2019-10-16 21:21:40.443 WARN  --- [HikariConfig.java:973][http-nio-8088-exec-2] - HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-10-16 21:21:40.443 INFO  --- [HikariDataSource.java:110][http-nio-8088-exec-2] - HikariPool-1 - Starting...
+2019-10-16 21:21:41.048 INFO  --- [HikariDataSource.java:123][http-nio-8088-exec-2] - HikariPool-1 - Start completed.
+2019-10-16 21:21:41.055 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:21:41.073 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: admin(String)
+2019-10-16 21:21:41.130 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 1
+2019-10-16 21:21:41.133 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:21:41.134 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 21:21:41.176 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 21:21:41.178 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:21:41.178 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - ==> Parameters: 
+2019-10-16 21:21:41.221 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-2] - <==      Total: 10
+2019-10-16 21:24:42.493 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:24:42.493 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: admin(String)
+2019-10-16 21:24:42.535 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 1
+2019-10-16 21:24:42.536 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:24:42.537 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 21:24:42.578 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 21:24:42.579 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:24:42.579 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - ==> Parameters: 
+2019-10-16 21:24:42.621 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-1] - <==      Total: 10
+2019-10-16 21:25:18.046 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:25:18.047 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: admin(String)
+2019-10-16 21:25:18.091 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 1
+2019-10-16 21:25:18.091 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:25:18.092 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: 
+2019-10-16 21:25:18.134 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 10
+2019-10-16 21:25:18.135 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:25:18.135 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - ==> Parameters: 
+2019-10-16 21:25:18.177 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-4] - <==      Total: 10
+2019-10-16 21:25:39.482 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:25:39.483 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: admin(String)
+2019-10-16 21:25:39.526 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 1
+2019-10-16 21:25:39.527 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:25:39.527 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 21:25:39.570 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 21:25:39.571 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:25:39.571 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - ==> Parameters: 
+2019-10-16 21:25:39.614 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-5] - <==      Total: 10
+2019-10-16 21:27:01.476 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:27:01.476 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: admin(String)
+2019-10-16 21:27:01.519 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 1
+2019-10-16 21:27:01.520 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:27:01.520 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 
+2019-10-16 21:27:01.562 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 10
+2019-10-16 21:27:01.563 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:27:01.564 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - ==> Parameters: 
+2019-10-16 21:27:01.607 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-6] - <==      Total: 10
+2019-10-16 21:30:29.889 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:30:29.890 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==> Parameters: admin(String)
+2019-10-16 21:30:29.935 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - <==      Total: 1
+2019-10-16 21:30:29.937 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:30:29.938 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==> Parameters: 
+2019-10-16 21:30:29.982 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - <==      Total: 10
+2019-10-16 21:30:29.983 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:30:29.983 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - ==> Parameters: 
+2019-10-16 21:30:30.027 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-8] - <==      Total: 10
+2019-10-16 21:35:35.723 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-10-16 21:35:35.724 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==> Parameters: admin(String)
+2019-10-16 21:35:35.766 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - <==      Total: 1
+2019-10-16 21:35:35.767 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:35:35.768 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==> Parameters: 
+2019-10-16 21:35:35.810 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - <==      Total: 10
+2019-10-16 21:35:35.810 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-10-16 21:35:35.811 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - ==> Parameters: 
+2019-10-16 21:35:35.852 DEBUG --- [BaseJdbcLogger.java:159][http-nio-8088-exec-3] - <==      Total: 10

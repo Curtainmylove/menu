@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://114.115.203.170:3838/example?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&useAffectedRows=true
+    username: root
+    password: root2019
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      connection-test-query: SELECT 1
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+server:
+  port: 8888
